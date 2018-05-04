@@ -28,25 +28,47 @@
 #
 
 
-
-
-
-
-
-# from sh import tail
-#
-# for line in tail("-f", "some.log", _iter=True):
-#     print(line)
-#
-#
-
-
+import time
+import threading
+import ConfigParser
+from sh import tail
 import docker
-client = docker.from_env()
-nodeos = client.containers.get("nodeos")
 
-for line in nodeos.logs(stream=True, tail=1):
-    print line
+
+class NewConfigParser(ConfigParser.RawConfigParser):
+    def get(self, section, option):
+        val = ConfigParser.RawConfigParser.get(self, section, option)
+        return val.strip('"').strip("'")
+
+
+config = NewConfigParser()
+config.read('config.ini')
+
+is_docker = config.get("global", "is_docker")
+log_file = config.get("global", "log_file")
+c_name = config.get("global", "c_name")
+
+
+class LogParser(threading.Thread):
+    def run(self):
+        if is_docker == "true":
+            client = docker.from_env()
+            nodeos = client.containers.get("nodeos")
+
+            for line in nodeos.logs(stream=True, tail=1):
+                print line
+        else:
+            for line in tail("-n", 1, "-f", log_file, _iter=True):
+                print(line)
+
+
+if __name__ == '__main__':
+    log_parser = LogParser()
+    log_parser.run()
+
+
+
+
 
 
 
