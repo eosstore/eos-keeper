@@ -49,6 +49,7 @@ log_file = config.get("global", "log_file")
 c_name = config.get("global", "c_name")
 
 
+
 class LogParser(threading.Thread):
     def run(self):
         if is_docker == "true":
@@ -65,6 +66,12 @@ class LogParser(threading.Thread):
 if __name__ == '__main__':
     log_parser = LogParser()
     log_parser.run()
+
+    for i in range(1000):
+        time.sleep(1)
+        print(i)
+
+
 
 
 

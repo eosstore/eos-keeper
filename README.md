@@ -23,4 +23,9 @@ docker run -d --restart=always --name nodeos -p 8888:8888 -p 9876:9876 \
 
 
 
+ nodeos --enable-stale-production --producer-name eosio \
+    --http-server-address 0.0.0.0:8889 --p2p-server-address 0.0.0.0:9877 \
+    --plugin eosio::chain_api_plugin --plugin eosio::net_api_plugin
+
+
 for i in `seq 100000`;do echo --$i-- && sleep 1;done > some.log

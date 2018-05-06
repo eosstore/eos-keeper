@@ -1,0 +1,221 @@
+
+
+1.
+chain_controller.cpp:176
+"push block #${n} from ${pro} ${time}  ${id} lib: ${l} success"
+
+2.
+producer_plugin.cpp:239
+"${p} generated block ${id}... #${n} @ ${t} with ${count} trxs, lib: ${lib}"
+
+3.
+fork_database.cpp:78
+"Number of missed blocks: ${num}"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2099580ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+2099581ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+2099581ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+2099583ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+2099702ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+2099784ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+2129581ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+2129581ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+2129581ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+2129744ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+2129746ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+2129829ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+2130501ms thread-0   fork_database.cpp:78          _push_block          ] Number of missed blocks: 108
+2130501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block cdc57545... #640474 @ 2018-05-04T05:35:30.500 with 0 trxs, lib: 632783
+2131000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 61396950... #640475 @ 2018-05-04T05:35:31.000 with 0 trxs, lib: 632783
+2131500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 9d14aa04... #640476 @ 2018-05-04T05:35:31.500 with 0 trxs, lib: 632783
+2132000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 769cf6c1... #640477 @ 2018-05-04T05:35:32.000 with 0 trxs, lib: 632783
+2132500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 75fb63ef... #640478 @ 2018-05-04T05:35:32.500 with 0 trxs, lib: 632783
+2133001ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 24d8ec11... #640479 @ 2018-05-04T05:35:33.000 with 0 trxs, lib: 632783
+2133501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block bca0d3b4... #640480 @ 2018-05-04T05:35:33.500 with 0 trxs, lib: 632783
+2134000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 9ba5270f... #640481 @ 2018-05-04T05:35:34.000 with 0 trxs, lib: 632783
+2134500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 1cb91cb1... #640482 @ 2018-05-04T05:35:34.500 with 0 trxs, lib: 632783
+2135001ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 8ba4e2e4... #640483 @ 2018-05-04T05:35:35.000 with 0 trxs, lib: 632783
+2135501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 8a32a3ca... #640484 @ 2018-05-04T05:35:35.500 with 0 trxs, lib: 632783
+2136001ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block b30e39bc... #640485 @ 2018-05-04T05:35:36.000 with 0 trxs, lib: 632783
+2142553ms thread-0   fork_database.cpp:78          _push_block          ] Number of missed blocks: 12
+2142553ms thread-0   chain_controller.cpp:1540     validate_block_heade ] head_block_time 2018-05-04T05:35:36.000, next_block 2018-05-04T05:35:42.500, block_interval 500
+2142553ms thread-0   chain_controller.cpp:1542     validate_block_heade ] Did not produce block within block_interval 500ms, took 6500ms)
+2142554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640486 from eoseco 2018-05-04T05:35:42.500  0009c5e6b14be4b329001da0e0ae7b6a173191466b5f7e4164cdf3a27fd93feb lib: 632783 success
+2143054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640487 from eoseco 2018-05-04T05:35:43.000  0009c5e718f5567656b0ac088134227c39fa1f442d8c7203b91ae1e0fd88653b lib: 632783 success
+2143554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640488 from eoseco 2018-05-04T05:35:43.500  0009c5e8406e94d931c6e0152fd44c7b66665b06d62115cdc18a0617f46d2102 lib: 632783 success
+2144054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640489 from eoseco 2018-05-04T05:35:44.000  0009c5e9d48e01fb8de83db494c2772daed7e93a01a8aa209225d876a4b77d7b lib: 632783 success
+2144553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640490 from eoseco 2018-05-04T05:35:44.500  0009c5ea6589a17f07d77ae2ec856a7f64cfc5d76e85efa7e9bbff8ec0cefa38 lib: 632783 success
+2145053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640491 from eoseco 2018-05-04T05:35:45.000  0009c5eb0f781ac5ba48960e0da9d20acfe3621837b05bc8af0ef3807c5eb253 lib: 632783 success
+2145553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640492 from eoseco 2018-05-04T05:35:45.500  0009c5ec91e1b4f0c220a9c8e81e299a2e38085bf66f23e228304b7e70bd5e94 lib: 632783 success
+2146054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640493 from eoseco 2018-05-04T05:35:46.000  0009c5ed20a64dee42f833f3707422dcbc303960e7108524bf4fe5860e9ad87a lib: 632783 success
+2146554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640494 from eoseco 2018-05-04T05:35:46.500  0009c5eed5a9935e03dd98cf04ee3b260184e0f710d81101dc5122deec620ef9 lib: 632783 success
+2147053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640495 from eoseco 2018-05-04T05:35:47.000  0009c5ef29f9b95cddfe36aea118cf28902487b9c57c9fccaf6342f9c081fa34 lib: 632783 success
+2147554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640496 from eoseco 2018-05-04T05:35:47.500  0009c5f0a07139819b6b2acfca1f03db9ce17dbf73798f051012548537e4a458 lib: 632783 success
+2148053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640497 from eoseco 2018-05-04T05:35:48.000  0009c5f1927561283c3bf5c1660981d7d887c1c9af40069a26f28372a9cd063d lib: 632783 success
+2148554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640498 from eosunion 2018-05-04T05:35:48.500  0009c5f265725e8583167703b8457c4e6ac03f7ddb19d6a405acc1c137e57476 lib: 632783 success
+2149054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640499 from eosunion 2018-05-04T05:35:49.000  0009c5f331df4b9f09f4a84ac0ebabacc70ccd8b884b7b611a1a2b1020d17e4b lib: 632783 success
+2149553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640500 from eosunion 2018-05-04T05:35:49.500  0009c5f4e5fc7df1f7621f41c3324e4934334f7c093452d3f8d86e53e3730c9e lib: 632783 success
+2150054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640501 from eosunion 2018-05-04T05:35:50.000  0009c5f50b4f6f32524e180a65d10c81f3e2a2b8d909e09616a9a46a243560c2 lib: 632783 success
+2150554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640502 from eosunion 2018-05-04T05:35:50.500  0009c5f66a7c2d50de80ae8663ee371121eb0bc6e3df0bbcfd28b1110f822c63 lib: 632783 success
+2151054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640503 from eosunion 2018-05-04T05:35:51.000  0009c5f7a0994faa1ac38e139cad847b46bdef12cc0d409ec8a4652d7098d3ce lib: 632783 success
+2151554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640504 from eosunion 2018-05-04T05:35:51.500  0009c5f8d98314bda24a7a0db0a8df18d041c310e421f3cfb42d2ef3e88b0f08 lib: 632783 success
+2152053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640505 from eosunion 2018-05-04T05:35:52.000  0009c5f94c63f2432cebcbaa1194da751fede2f472e91eb19563c1018d2047c0 lib: 632783 success
+2152554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640506 from eosunion 2018-05-04T05:35:52.500  0009c5fa72acfe240aa501d6704bae770e4e23ea4b5f014d12cfbec085bf533f lib: 632783 success
+2153054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640507 from eosunion 2018-05-04T05:35:53.000  0009c5fb48719d7a8c7b64a16cbbc2c2b82de4ecf8557580f26e78d73d866714 lib: 632783 success
+2153554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640508 from eosunion 2018-05-04T05:35:53.500  0009c5fc48a8dfc0b77f70836e0650d321fe532c18a3084c33e7014def60b79f lib: 632783 success
+2154053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640509 from eosunion 2018-05-04T05:35:54.000  0009c5fd6ea88e479c9ef8edfd2fec0c8a626baafef9a2cafa3ebd940c1f5e26 lib: 632783 success
+2159581ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+2159581ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+2159581ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+2159584ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+2159696ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+2159776ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+2160553ms thread-0   fork_database.cpp:78          _push_block          ] Number of missed blocks: 12
+2160553ms thread-0   chain_controller.cpp:1540     validate_block_heade ] head_block_time 2018-05-04T05:35:54.000, next_block 2018-05-04T05:36:00.500, block_interval 500
+2160553ms thread-0   chain_controller.cpp:1542     validate_block_heade ] Did not produce block within block_interval 500ms, took 6500ms)
+2160554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640510 from eoscybex 2018-05-04T05:36:00.500  0009c5febbecbf08bb7f5e2d74d33ce08dd351ecc13ee9d9ecbdb393f5afff74 lib: 632783 success
+2161054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640511 from eoscybex 2018-05-04T05:36:01.000  0009c5ff0f65cbadfbd5d70f0f25a1b7813e89804296ba5fdc58ad0d3c421c72 lib: 632783 success
+2161553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640512 from eoscybex 2018-05-04T05:36:01.500  0009c600ee4b5ba857ccb93e6130a65c9f8b656dfedfd99e757f32f10658ac12 lib: 632783 success
+2162054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640513 from eoscybex 2018-05-04T05:36:02.000  0009c6015c758623fd74b71777062753bc36c0e4cd240b17d818f078533449ea lib: 632783 success
+2162553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640514 from eoscybex 2018-05-04T05:36:02.500  0009c6025f5a291adf48cfc7d741fa00dba81d567b4598e2e97d4738ad5500cd lib: 632783 success
+2163054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640515 from eoscybex 2018-05-04T05:36:03.000  0009c6030b5e1f1fe1f9dda44a633dd147a75c9955788b34790a22d9267b488c lib: 632783 success
+2163553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640516 from eoscybex 2018-05-04T05:36:03.500  0009c604403ea04662cee666df927e809c4aa144320e813fbe6bf72486937c79 lib: 632783 success
+2164053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640517 from eoscybex 2018-05-04T05:36:04.000  0009c6059d42006fee723b91d0f7116fc1936ee1215dac050422fc6d3fc21cd7 lib: 632783 success
+2164553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640518 from eoscybex 2018-05-04T05:36:04.500  0009c6064921216052418d52cf61b197ef640a7142fbc2c6cf32cf002dd85303 lib: 632783 success
+2165054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640519 from eoscybex 2018-05-04T05:36:05.000  0009c607c97315a28987916b10d8035340517e091f820d0d76cfb36ae9628b78 lib: 632783 success
+2165556ms thread-0   chain_controller.cpp:176      push_block           ] push block #640520 from eoscybex 2018-05-04T05:36:05.500  0009c60843146be9854fe88d0159dd49f1a5137e994057045d1bab38e5d32e06 lib: 632783 success
+2166053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640521 from eoscybex 2018-05-04T05:36:06.000  0009c60979e19a40dc695af075c8f7c73cd6dfb1599e79db08a3c9de261dad93 lib: 632783 success
+2166554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640522 from wancloud 2018-05-04T05:36:06.500  0009c60a389d49488e50224b2ea40aaa6401ebb92971b50f48ff2226af068327 lib: 632783 success
+2167054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640523 from wancloud 2018-05-04T05:36:07.000  0009c60b5948fb392f2b432682c230cf65d1f17a94ee3443923a1f285065ce58 lib: 632783 success
+2167553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640524 from wancloud 2018-05-04T05:36:07.500  0009c60c4d102bdba1da078f04efc21fe272a0c7ce6c6f2ca0ec7935fc78bf60 lib: 632783 success
+2168054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640525 from wancloud 2018-05-04T05:36:08.000  0009c60d907fe277b266f69d913fc0172a969e18eba365ca9b0f64569c7f2425 lib: 632783 success
+2168554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640526 from wancloud 2018-05-04T05:36:08.500  0009c60e5631e3f81ea35d5d986455792180489a3afaeeaa0f30e209ae0a1172 lib: 632783 success
+2169053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640527 from wancloud 2018-05-04T05:36:09.000  0009c60fc90fdb2e39cc0058415e00efd9f15238541657b4e61564cf69ec80f0 lib: 632783 success
+2169554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640528 from wancloud 2018-05-04T05:36:09.500  0009c61001dff57c4691bf7d55191f093fad1e6ebf28464119bf4f38d2c9ab27 lib: 632783 success
+2170054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640529 from wancloud 2018-05-04T05:36:10.000  0009c611bafc93fa34446553721b4a5fd885c417ecfee75b65b8265eabb02a31 lib: 632783 success
+2170554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640530 from wancloud 2018-05-04T05:36:10.500  0009c612763e6027791610448c785998c875a44726e295c0f930199be2999b6f lib: 632783 success
+2171054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640531 from wancloud 2018-05-04T05:36:11.000  0009c6132676c742c10009c929edd3c1f05407393534223aee63f96f6f8d737e lib: 632783 success
+2171554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640532 from wancloud 2018-05-04T05:36:11.500  0009c614c03aaed75aa0acd390260744e22972043dc0a41268dd0c0115bc991d lib: 632783 success
+2172054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640533 from wancloud 2018-05-04T05:36:12.000  0009c615e0ee8c969642b20a059add79daf891bc0c11691506f133b4dd4ab4e9 lib: 632783 success
+2172553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640534 from eoshedging 2018-05-04T05:36:12.500  0009c616d3a1fda456ffd77a341690097985f6a47b00468f1f4b3b67ae9e509a lib: 632783 success
+2173054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640535 from eoshedging 2018-05-04T05:36:13.000  0009c6176904dac8698ff5d0d1e4de576c23f3c774d6d87035e4aff86d53a450 lib: 632783 success
+2173554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640536 from eoshedging 2018-05-04T05:36:13.500  0009c61826fe25d671e9471109ba4680041298d6568a75d882a3951361ae84d0 lib: 632783 success
+2174054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640537 from eoshedging 2018-05-04T05:36:14.000  0009c619ffe3b1c8ab8e728c75bc87efa4b3864783379626a757a7797e26f18f lib: 632783 success
+2174554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640538 from eoshedging 2018-05-04T05:36:14.500  0009c61a04258e14714ec96b8550a06a8c2bebd5df9c24e3fdd35be483712b17 lib: 632783 success
+2175054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640539 from eoshedging 2018-05-04T05:36:15.000  0009c61b711946a4b75c2b2ae72e4f03f4500e9bad3a9fcf541d6bf492ecfd72 lib: 632783 success
+2175554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640540 from eoshedging 2018-05-04T05:36:15.500  0009c61c421fcca9c8b450339d9af16c45d0b293b054b58d6a0f9050c0317e58 lib: 632783 success
+2176054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640541 from eoshedging 2018-05-04T05:36:16.000  0009c61df8b0794389d670643ee29c4625a1f550637b14c1faeffb73e4debb20 lib: 632783 success
+2176554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640542 from eoshedging 2018-05-04T05:36:16.500  0009c61ea56d816ff051994d47f116cc468a3228948b9137083f9ca1ebc6fbdf lib: 632783 success
+2177053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640543 from eoshedging 2018-05-04T05:36:17.000  0009c61f416f7be10a90c7791577c72a01c3f30008c5017a4389696f9d9c445b lib: 632783 success
+2177553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640544 from eoshedging 2018-05-04T05:36:17.500  0009c62078628aae8253ce1622cba01f9707e1d0cd451f7501403269361775a8 lib: 632783 success
+2178053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640545 from eoshedging 2018-05-04T05:36:18.000  0009c6210f263d61333e8d8cf46b0c55941b5bd91fb9fb147bc0ac1da0c3f9d5 lib: 632783 success
+2189581ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+2189581ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+2189581ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+2189823ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+2189824ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+2189905ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+2219581ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+2219581ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+2219581ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+2219583ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+2219585ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+2219662ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+2232500ms thread-0   fork_database.cpp:78          _push_block          ] Number of missed blocks: 108
+2232501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block e8dcb94c... #640546 @ 2018-05-04T05:37:12.500 with 0 trxs, lib: 632783
+2233000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 7ffd588f... #640547 @ 2018-05-04T05:37:13.000 with 0 trxs, lib: 632783
+2233500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 0b40a0c0... #640548 @ 2018-05-04T05:37:13.500 with 0 trxs, lib: 632783
+2234002ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 86e10fce... #640549 @ 2018-05-04T05:37:14.000 with 0 trxs, lib: 632783
+2234501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block f2e6152e... #640550 @ 2018-05-04T05:37:14.500 with 0 trxs, lib: 632783
+2235000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 15381cdb... #640551 @ 2018-05-04T05:37:15.000 with 0 trxs, lib: 632783
+2235501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 39bb3e47... #640552 @ 2018-05-04T05:37:15.500 with 0 trxs, lib: 632783
+2236001ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block c8598c3e... #640553 @ 2018-05-04T05:37:16.000 with 0 trxs, lib: 632783
+2236500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 851b48ba... #640554 @ 2018-05-04T05:37:16.500 with 0 trxs, lib: 632783
+2237001ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block a870cda5... #640555 @ 2018-05-04T05:37:17.000 with 0 trxs, lib: 632783
+2237500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 920ecc6c... #640556 @ 2018-05-04T05:37:17.500 with 0 trxs, lib: 632783
+2238000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 7b1caf6e... #640557 @ 2018-05-04T05:37:18.000 with 0 trxs, lib: 632783
+2244553ms thread-0   fork_database.cpp:78          _push_block          ] Number of missed blocks: 12
+2244553ms thread-0   chain_controller.cpp:1540     validate_block_heade ] head_block_time 2018-05-04T05:37:18.000, next_block 2018-05-04T05:37:24.500, block_interval 500
+2244553ms thread-0   chain_controller.cpp:1542     validate_block_heade ] Did not produce block within block_interval 500ms, took 6500ms)
+2244554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640558 from eoseco 2018-05-04T05:37:24.500  0009c62e3580b830dbeb03abdeae6206d41e2ba1605dfbe5b3a2625144ac4565 lib: 632783 success
+2245053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640559 from eoseco 2018-05-04T05:37:25.000  0009c62f43a5a092174120e7fc229c63b432ebb8d64de9916961d2b6077dd207 lib: 632783 success
+2245554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640560 from eoseco 2018-05-04T05:37:25.500  0009c6308d624ed732017829f2d427c8d3875cd14f16a85f0c49f0e44340475b lib: 632783 success
+2246054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640561 from eoseco 2018-05-04T05:37:26.000  0009c631264cdea20f2182e3f6cc7a5112d79e986f9898d5b81a7a8a5cc869dd lib: 632783 success
+2246553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640562 from eoseco 2018-05-04T05:37:26.500  0009c632623ed389695cdc2518223c909cfcb5431b8578bb70bc46a67db226bd lib: 632783 success
+2247054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640563 from eoseco 2018-05-04T05:37:27.000  0009c63393f676cbc0e3b0dacffc23306843a6cef6f9a69c305a4e85b185bbcf lib: 632783 success
+2247554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640564 from eoseco 2018-05-04T05:37:27.500  0009c634bd47658d551845f09c0bb2f9e0e42d3ef0265ecffa500fb0b3e5be91 lib: 632783 success
+2248053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640565 from eoseco 2018-05-04T05:37:28.000  0009c635557ec2dfdd1c29ec09cc5d22b7d5880719e5c09874e71b2c9a1b37b0 lib: 632783 success
+2248553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640566 from eoseco 2018-05-04T05:37:28.500  0009c636f28c1815c760c8a5e7b869cfe40b5953f79abd02a02aef0196d08dcf lib: 632783 success
+2249054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640567 from eoseco 2018-05-04T05:37:29.000  0009c637a5585d3cd646a078dfb7eee17c7653f33679a3273642a02036c42e58 lib: 632783 success
+2249554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640568 from eoseco 2018-05-04T05:37:29.500  0009c6382816dd6a18f4fd92d5d20877f38fb50448694a10b5f873c4bb72cfe4 lib: 632783 success
+2249581ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+2249581ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+2249581ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+2249674ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+2249676ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+2249745ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+2250053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640569 from eoseco 2018-05-04T05:37:30.000  0009c639a62329617a5fa738937b0ce85ec1ca06b7557eac7867fb08cd743241 lib: 632783 success
+2250553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640570 from eosunion 2018-05-04T05:37:30.500  0009c63aa8bdfc10cdd5f5664fcc8b86247cad577a5f97730d3345806edf927a lib: 632783 success
+2251054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640571 from eosunion 2018-05-04T05:37:31.000  0009c63bfa1cf68851aa25ef45f1a5bb474eed7a13a9112032d8cb9289bd288a lib: 632783 success
+2251553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640572 from eosunion 2018-05-04T05:37:31.500  0009c63cfce173c3ad84fdc6a1ce11aeb2a2c29e514c9f50a5e91f95788588b4 lib: 632783 success
+2252054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640573 from eosunion 2018-05-04T05:37:32.000  0009c63d5ff0ee44dabb0048eba12eb10c4596427ad3722366c8eaadba667f7e lib: 632783 success
+2252554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640574 from eosunion 2018-05-04T05:37:32.500  0009c63ee435940bd75822bffb1f010c8fd48b9ff2377cfe3575bd48958d7aca lib: 632783 success
+2253054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640575 from eosunion 2018-05-04T05:37:33.000  0009c63ff87e2123632163e4745b5b3f219732826125129ebb0203b3be849657 lib: 632783 success
+2253554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640576 from eosunion 2018-05-04T05:37:33.500  0009c64013abe772665138ea3ba428b2ee034531f0bba8afb3360825650375cd lib: 632783 success
+2254053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640577 from eosunion 2018-05-04T05:37:34.000  0009c641f074f84712b9908268455eeff13fd0e5252c8b018b1e0b8e1ff292bc lib: 632783 success
+2254553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640578 from eosunion 2018-05-04T05:37:34.500  0009c6428a94c11d4e942b999a6414e6bd3078af13a102a5d2ed8ed9702f4c29 lib: 632783 success
+2255053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640579 from eosunion 2018-05-04T05:37:35.000  0009c64381f6308be0ad1c4e7fa18b09339b2a9530234e83060ab6329bc99e7e lib: 632783 success
+2255553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640580 from eosunion 2018-05-04T05:37:35.500  0009c644d742f18eea6f48703c2d109d665d2bbb9fce7c5d53df314cb6d2e8c9 lib: 632783 success
+2256053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640581 from eosunion 2018-05-04T05:37:36.000  0009c6459388298fdebceb25da83eb92d4225890dafd505ec2afeb2d84f78ee1 lib: 632783 success
+2262553ms thread-0   fork_database.cpp:78          _push_block          ] Number of missed blocks: 12
+2262553ms thread-0   chain_controller.cpp:1540     validate_block_heade ] head_block_time 2018-05-04T05:37:36.000, next_block 2018-05-04T05:37:42.500, block_interval 500
+2262553ms thread-0   chain_controller.cpp:1542     validate_block_heade ] Did not produce block within block_interval 500ms, took 6500ms)
+2262554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640582 from eoscybex 2018-05-04T05:37:42.500  0009c6468f2a9c143ce6b3c10c87a4c1f08a0c8da8d592cfe9d7f4a4ae14f47c lib: 632783 success
+2263053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640583 from eoscybex 2018-05-04T05:37:43.000  0009c6476633c8880230c8ed86c5a189b409dcc7dc4c9351b22da2a0940da56c lib: 632783 success
+2263554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640584 from eoscybex 2018-05-04T05:37:43.500  0009c648be26e134d47befb12e2819b1def632cf220cd0a0d780dcc41aac54aa lib: 632783 success
+2264053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640585 from eoscybex 2018-05-04T05:37:44.000  0009c6490d57635ee0518d5c99c54fccd2e291041b7b595c0d2da4e88222ec25 lib: 632783 success
+2264553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640586 from eoscybex 2018-05-04T05:37:44.500  0009c64a6d588b0a3e9c75b6397af27e1d69e58ff4c97a667606f57d1ebd7d7b lib: 632783 success
+2265053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640587 from eoscybex 2018-05-04T05:37:45.000  0009c64b0fef53c2cb7359de00b25d9786379d4da498ee2f9d7a5982bbd2e54c lib: 632783 success
+2265553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640588 from eoscybex 2018-05-04T05:37:45.500  0009c64c7e45bed04631f56fc05b641e06d35487b16625901dfc186021ba5c61 lib: 632783 success
+2266054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640589 from eoscybex 2018-05-04T05:37:46.000  0009c64ddd852dd6da6f4afd62dacd2abd27b6b9b98ffef2d0b0bf461b2491e8 lib: 632783 success
+2266553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640590 from eoscybex 2018-05-04T05:37:46.500  0009c64e4200321826cabfc98ba14bf92ea29c6c05a260e3de9584715c55054c lib: 632783 success
+2267054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640591 from eoscybex 2018-05-04T05:37:47.000  0009c64f440880735cbe8e2b7e1aa69587f8a7f207ea0a365368fbe11398a9b8 lib: 632783 success
+2267555ms thread-0   chain_controller.cpp:176      push_block           ] push block #640592 from eoscybex 2018-05-04T05:37:47.500  0009c6506d09a551b423d3b8eb81bd9f1ed832dd99765aa7072af7e62ebb6c47 lib: 632783 success
+2268054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640593 from eoscybex 2018-05-04T05:37:48.000  0009c651575e952b8d3d536f5e9306fcc84296894a814af2464a801ff47d67e7 lib: 632783 success
+2268554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640594 from wancloud 2018-05-04T05:37:48.500  0009c652b55282d053f85c45d064c78fab47701da300db1e3b540b8a1fa943a2 lib: 632783 success
+2269054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640595 from wancloud 2018-05-04T05:37:49.000  0009c65360730e51cd6150f486e1c250542f76a312ba0b8487aadf9e7c951102 lib: 632783 success
+2269553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640596 from wancloud 2018-05-04T05:37:49.500  0009c65406653dafa635700ba9499a05f9737eafed9d5aea933162f04f8f8d4b lib: 632783 success
+2270053ms thread-0   chain_controller.cpp:176      push_block           ] push block #640597 from wancloud 2018-05-04T05:37:50.000  0009c65555e248bf901799fb17c8d4f411d30537ce281dd5a58b8c966661f7c2 lib: 632783 success
+2270554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640598 from wancloud 2018-05-04T05:37:50.500  0009c656bef1564c65a163c6fc0a7b84ad8f42af815fa2e40d8aa1d1a2f96381 lib: 632783 success
+2271054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640599 from wancloud 2018-05-04T05:37:51.000  0009c657865bd9130de640c4f490bba54eef5a2f438f47c65b93c8b671b6bd23 lib: 632783 success
+2271553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640600 from wancloud 2018-05-04T05:37:51.500  0009c658abd4d0565ca0a3c8d79244e594dd6a1e6626152cf6929592aade3a85 lib: 632783 success
+2272054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640601 from wancloud 2018-05-04T05:37:52.000  0009c6598d4f684b638bdb6dd096ede88d4f20dbc5dd787152f997b374ac9f84 lib: 632783 success
+2272553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640602 from wancloud 2018-05-04T05:37:52.500  0009c65ac957b058cb19ccf9926ac2ce21960a337032fb884978ebf73721f184 lib: 632783 success
+2273054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640603 from wancloud 2018-05-04T05:37:53.000  0009c65b7265d6667ac65deb27f043ae2cd0af9d17e49892b22cadc2b507d0b9 lib: 632783 success
+2273553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640604 from wancloud 2018-05-04T05:37:53.500  0009c65cf3f8453e27479a82a7d73554c3161f6b6092e4783e028dbb281fbc7e lib: 632783 success
+2274054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640605 from wancloud 2018-05-04T05:37:54.000  0009c65d6af188a839baef1752cc101a079f0a8ec631af193bb5547ad4954ab1 lib: 632783 success
+2274554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640606 from eoshedging 2018-05-04T05:37:54.500  0009c65e185db716eec277b0e0dd8a822237c4fb83d4fbbc8774f17c2de1f931 lib: 632783 success
+2275054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640607 from eoshedging 2018-05-04T05:37:55.000  0009c65f603e972f463800543c0a37d4323d7f253d9b13c406184a59c0f8d1c5 lib: 632783 success
+2275554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640608 from eoshedging 2018-05-04T05:37:55.500  0009c660af088e0c138870a35ffb655d3ff80ab9d50c06f7ad25200d8e1a8217 lib: 632783 success
+2276054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640609 from eoshedging 2018-05-04T05:37:56.000  0009c661f91f304002778f558e99c514f3c1268e44944c2ccc039189cd73c1b5 lib: 632783 success
+2276553ms thread-0   chain_controller.cpp:176      push_block           ] push block #640610 from eoshedging 2018-05-04T05:37:56.500  0009c6620f173d575943e47c822e25280a375388221c04ad5adfe979c9148a9e lib: 632783 success
+2277054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640611 from eoshedging 2018-05-04T05:37:57.000  0009c66353a65833cb35978a548ba7fc2d830e3bf8ef43593089f40dfd881f3d lib: 632783 success
+2277554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640612 from eoshedging 2018-05-04T05:37:57.500  0009c66450dd50d167c4b549e7147754d938f8b217b45e317a4544cf87e3507e lib: 632783 success
+2278054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640613 from eoshedging 2018-05-04T05:37:58.000  0009c66593c73e03f816355dd9eff2d8e1f6c60328ae26855ff0fe82fef5e8bf lib: 632783 success
+2278554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640614 from eoshedging 2018-05-04T05:37:58.500  0009c6664c20ec14207882cc91a3a304d9fb4c6586e731b05cc3186afc9a5d52 lib: 632783 success
+2279054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640615 from eoshedging 2018-05-04T05:37:59.000  0009c667c2f76943e23ed50bf9b685aec740d1e94b951fbf99ac9bf28cd47dd5 lib: 632783 success
+2279554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640616 from eoshedging 2018-05-04T05:37:59.500  0009c6680f3d1eb99ddaa4d4e9f6593a75e15fce77d61a3ff9ecb51d84783d68 lib: 632783 success
+
