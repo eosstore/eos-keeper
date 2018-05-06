@@ -219,3 +219,120 @@ fork_database.cpp:78
 2279054ms thread-0   chain_controller.cpp:176      push_block           ] push block #640615 from eoshedging 2018-05-04T05:37:59.000  0009c667c2f76943e23ed50bf9b685aec740d1e94b951fbf99ac9bf28cd47dd5 lib: 632783 success
 2279554ms thread-0   chain_controller.cpp:176      push_block           ] push block #640616 from eoshedging 2018-05-04T05:37:59.500  0009c6680f3d1eb99ddaa4d4e9f6593a75e15fce77d61a3ff9ecb51d84783d68 lib: 632783 success
 
+
+
+
+
+
+
+
+
+分叉后的日志：
+
+[root@eos-test-01 ~]# docker logs -f --tail 1 eosforce
+1476000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 8105c106... #670785 @ 2018-05-06T13:24:36.000 with 0 trxs, lib: 632783
+1500226ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+1500226ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+1500226ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+1500228ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+1500230ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+1500313ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+1530226ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+1530226ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+1530226ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+1530421ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+1531293ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+1531362ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+1560226ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+1560226ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+1560226ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+1560229ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+1560230ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+1560310ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+1572500ms thread-0   fork_database.cpp:78          _push_block          ] Number of missed blocks: 192
+1572501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 5470bbe8... #670786 @ 2018-05-06T13:26:12.500 with 0 trxs, lib: 632783
+1573000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 2150ff09... #670787 @ 2018-05-06T13:26:13.000 with 0 trxs, lib: 632783
+1573500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 3f0c02ff... #670788 @ 2018-05-06T13:26:13.500 with 0 trxs, lib: 632783
+1574000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block aabaac30... #670789 @ 2018-05-06T13:26:14.000 with 0 trxs, lib: 632783
+1574500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block abe93b89... #670790 @ 2018-05-06T13:26:14.500 with 0 trxs, lib: 632783
+1575001ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block b939cd34... #670791 @ 2018-05-06T13:26:15.000 with 0 trxs, lib: 632783
+1575500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block a379bef2... #670792 @ 2018-05-06T13:26:15.500 with 0 trxs, lib: 632783
+1576000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 779ea229... #670793 @ 2018-05-06T13:26:16.000 with 0 trxs, lib: 632783
+1576500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block c6fb95c6... #670794 @ 2018-05-06T13:26:16.500 with 0 trxs, lib: 632783
+1577000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block f3b1b308... #670795 @ 2018-05-06T13:26:17.000 with 0 trxs, lib: 632783
+1577501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 09f41395... #670796 @ 2018-05-06T13:26:17.500 with 0 trxs, lib: 632783
+1578001ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block d11af1f5... #670797 @ 2018-05-06T13:26:18.000 with 0 trxs, lib: 632783
+1590226ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+1590226ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+1590226ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+1590314ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+1590315ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+1590382ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+1620226ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+1620226ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+1620226ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+1620229ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+1620316ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+1620386ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+1650226ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+1650226ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+1650226ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+1650234ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+1650235ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+1650315ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+1674500ms thread-0   fork_database.cpp:78          _push_block          ] Number of missed blocks: 192
+1674501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block b2b0b247... #670798 @ 2018-05-06T13:27:54.500 with 0 trxs, lib: 632783
+1675000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block e18c6eaf... #670799 @ 2018-05-06T13:27:55.000 with 0 trxs, lib: 632783
+1675501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 021f3802... #670800 @ 2018-05-06T13:27:55.500 with 0 trxs, lib: 632783
+1676000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 353c1d9f... #670801 @ 2018-05-06T13:27:56.000 with 0 trxs, lib: 632783
+1676501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 368a7cdc... #670802 @ 2018-05-06T13:27:56.500 with 0 trxs, lib: 632783
+1677000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block a8836612... #670803 @ 2018-05-06T13:27:57.000 with 0 trxs, lib: 632783
+1677501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block a171fae2... #670804 @ 2018-05-06T13:27:57.500 with 0 trxs, lib: 632783
+1678001ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block d2ab1fba... #670805 @ 2018-05-06T13:27:58.000 with 0 trxs, lib: 632783
+1678500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 8cdfaf4e... #670806 @ 2018-05-06T13:27:58.500 with 0 trxs, lib: 632783
+1679000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 7a7f4f86... #670807 @ 2018-05-06T13:27:59.000 with 0 trxs, lib: 632783
+1679500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 73576367... #670808 @ 2018-05-06T13:27:59.500 with 0 trxs, lib: 632783
+1680001ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block b9910d64... #670809 @ 2018-05-06T13:28:00.000 with 0 trxs, lib: 632783
+1680226ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+1680227ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+1680227ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+1680229ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+1680394ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+1680468ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+1710227ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+1710227ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+1710227ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+1710230ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+1710231ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+1710313ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+1740227ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+1740227ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+1740227ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+1740229ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+1740361ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+1740444ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+1770227ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+1770227ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+1770227ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+1770422ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+1770423ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+1770497ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused
+1776501ms thread-0   fork_database.cpp:78          _push_block          ] Number of missed blocks: 192
+1776501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block c53619f3... #670810 @ 2018-05-06T13:29:36.500 with 0 trxs, lib: 632783
+1777000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 4737fffa... #670811 @ 2018-05-06T13:29:37.000 with 0 trxs, lib: 632783
+1777500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block f6d2e357... #670812 @ 2018-05-06T13:29:37.500 with 0 trxs, lib: 632783
+1778000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 9ac797e8... #670813 @ 2018-05-06T13:29:38.000 with 0 trxs, lib: 632783
+1778500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 61f44939... #670814 @ 2018-05-06T13:29:38.500 with 0 trxs, lib: 632783
+1779000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 0115ecd7... #670815 @ 2018-05-06T13:29:39.000 with 0 trxs, lib: 632783
+1779500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 4a289647... #670816 @ 2018-05-06T13:29:39.500 with 0 trxs, lib: 632783
+1780000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 4162e1b8... #670817 @ 2018-05-06T13:29:40.000 with 0 trxs, lib: 632783
+1780500ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block d1f87429... #670818 @ 2018-05-06T13:29:40.500 with 0 trxs, lib: 632783
+1781000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block e98fbc66... #670819 @ 2018-05-06T13:29:41.000 with 0 trxs, lib: 632783
+1781501ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 0764cf1b... #670820 @ 2018-05-06T13:29:41.500 with 0 trxs, lib: 632783
+1782000ms thread-0   producer_plugin.cpp:239       block_production_loo ] eostore generated block 6c1ff703... #670821 @ 2018-05-06T13:29:42.000 with 0 trxs, lib: 632783
+1800227ms thread-0   net_plugin.cpp:1858           connect              ] host: eosio.eosforce.io port: 9876
+1800227ms thread-0   net_plugin.cpp:1858           connect              ] host: ortc.io port: 9876
+1800227ms thread-0   net_plugin.cpp:1858           connect              ] host: 45.77.170.82 port: 9876
+1800229ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to eosio.eosforce.io:9876: Connection refused
+1800361ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to ortc.io:9876: Connection refused
+1800431ms thread-0   net_plugin.cpp:1893           operator()           ] connection failed to 45.77.170.82:9876: Connection refused

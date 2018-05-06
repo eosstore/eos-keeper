@@ -1,35 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
+#
 
-import re
-
-
-# 1.
-# fork_database.cpp:78
-# "Number of missed blocks: ${num}"
-#
-# 2.
-# producer_plugin.cpp:239
-# "${p} generated block ${id}... #${n} @ ${t} with ${count} trxs, lib: ${lib}"
-#
-# 3.
-# chain_controller.cpp:176
-# "push block #${n} from ${pro} ${time}  ${id} lib: ${l} success"
-#
-#
-# 4.
-# chain_controller.cpp:726
-# "pop block #${n} from ${pro} ${time}  ${id}"
 
 
 re1 = r'.*] Number of missed blocks: (\d+)'
 re2 = r'.*producer_plugin.cpp.*] (.*) generated block .* (#\d+) @.* with (\d+) trxs.*'
 re3 = r'.*chain_controller.cpp.*] push block (#\d+) from (.+) 20\d\d-.*'
-
-
-
-
-
 
 
 str1=r"2130501ms thread-0   fork_database.cpp:78          _push_block          ] Number of missed blocks: 108"
