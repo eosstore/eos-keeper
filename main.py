@@ -320,6 +320,21 @@ def parse():
             return
 
     # 如果是A角色，
+    if role == "A":
+        pass
+        return
+
+    if role == "B":
+        pass
+
+
+
+
+
+
+
+
+
 
 
 def get_info():
@@ -343,3 +358,6 @@ if __name__ == '__main__':
         parse()
         print get_info()
         time.sleep(1)
+
+
+
